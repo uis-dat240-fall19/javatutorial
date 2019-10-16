@@ -1,6 +1,6 @@
 package comparator;
 
-public class Song implements Comparable <Song>
+public class Song 
 {
     String title;
     String artist;
@@ -30,10 +30,7 @@ public class Song implements Comparable <Song>
         return title.hashCode();
     }
     
-    public int compareTo(Song s)
-    {
-        return title.compareTo(s.getTitle());
-    }
+   
 
     public String getArtist()
     {
