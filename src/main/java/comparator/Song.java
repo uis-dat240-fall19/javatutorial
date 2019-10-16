@@ -5,10 +5,9 @@ public class Song implements Comparable <Song>
     String title;
     String artist;
     int rating;
-    String bpm;
+    int bpm;
     
-    
-    public Song(String t, String a, int r, String b) {
+    public Song(String t, String a, int r, int b) {
         title = t;
         artist = a;
         rating = r;
@@ -19,7 +18,7 @@ public class Song implements Comparable <Song>
         title = t;
         artist = a;
         rating = Integer.parseInt(r);
-        bpm = b;
+        bpm = Integer.parseInt(b);
     }
     
     public boolean equals(Object aSong) {
@@ -41,7 +40,7 @@ public class Song implements Comparable <Song>
         return artist;
     }
 
-    public String getBpm()
+    public int getBpm()
     {
         return bpm;
     }

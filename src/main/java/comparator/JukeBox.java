@@ -46,4 +46,9 @@ public class JukeBox {
 		Song nextSong = new Song(tokens[0], tokens[1], tokens[2], tokens[3]);
 		songList.add(nextSong);
 	}
+
+	public Song[] getTopKSongs(int k) {
+		// TODO return top-k songs according to their rating
+		return null;
+	}
 }
