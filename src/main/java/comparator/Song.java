@@ -1,6 +1,6 @@
 package comparator;
 
-public class Song 
+public class Song implements Comparable<Song>
 {
     String title;
     String artist;
@@ -55,6 +55,24 @@ public class Song
     public String toString() {
         return title;
     }
+
+	@Override
+	public int compareTo(Song otherSong) {
+		//Returns 0 if this song equals other song
+		//Returns a positive number if this song should come before the other song in the list
+		//Returns a negative number otherwise
+//		return this.title.compareTo(otherSong.getTitle());
+		int returnValue = 0;
+		if(!this.title.equals(otherSong.getTitle())) {
+			if(this.title.compareTo(otherSong.getTitle()) > 0) {
+				returnValue = -23089;
+			}
+			else {
+				returnValue = 1;
+			}
+		}
+		return returnValue;
+	}
 
 }
 
