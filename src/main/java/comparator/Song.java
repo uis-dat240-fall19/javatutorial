@@ -36,7 +36,6 @@ public class Song implements Comparable<Song> {
 	public int getBpm() {
 		return bpm;
 	}
-
 	public int getRating() {
 		return rating;
 	}

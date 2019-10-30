@@ -39,20 +39,7 @@ public class JukeBox {
 			}
 		};
 		
-		Comparator<Song> ratingComparator = new Comparator<Song>() {
-
-			@Override
-			public int compare(Song o1, Song o2) {
-				if(o2.getRating() == o1.getRating()) {
-					return o2.getBpm() - o1.getBpm();
-				}
-				else
-					return o2.getRating() - o1.getRating();
-			}
-			
-		};
-		
-		Collections.sort(jb.getSongList(), ratingComparator);
+		Collections.sort(jb.getSongList());
 		
 		System.out.println("Song list after sorting");
 		for (Song s : jb.getSongList()) {
