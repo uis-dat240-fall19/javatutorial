@@ -3,6 +3,7 @@
  */
 package javatutorial;
 
+
 public class App {
     public String getGreeting() {
         return "Hello world.";
@@ -10,5 +11,9 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+//    	Thread t = new Thread(new MyThread());
+//    	t.setDaemon(true);
+//		t.start();
+		System.out.println("back in the main");
     }
 }
